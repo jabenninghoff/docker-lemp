@@ -19,6 +19,8 @@ services:
     image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: mypassword
+    volumes:
+      - ./data/mysql:/var/lib/mysql
 
   # temporarily include phpmyadmin for testing
   phpmyadmin:
